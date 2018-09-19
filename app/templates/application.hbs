@@ -1,5 +1,35 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+<style media="screen">
+  body,h3,h4,h5,h6 {
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
 
+body {
+  margin: 5%;
+}
+
+  h1,h2 {
+font-family: 'Montserrat', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>
+<header>
+  {{#link-to "index"}}
+  <h1 style="color: black; text-align: center; margin: 0;">REDDIT <span style="color: #ffce54">RETURN</span></h1>
+  {{/link-to}}
+  <h3 style="text-align: center; margin-top: 0;">return every subreddit about Javascript!</h3>
+</header>
+
+{{#link-to "javascript"}}
+<h3 style="color: #ffce54; letter-spacing: 1px; text-align: center; margin-bottom: 5%;">|Javascript|</h3>
+{{/link-to}}
 {{outlet}}
+
+<footer>
+  <p>&copy; Sylvie Howton</p>
+</footer>

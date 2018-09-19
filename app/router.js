@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('javascript');
+  this.route('loader');
 });
 
 export default Router;
